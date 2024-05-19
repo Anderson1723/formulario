@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, fantasy;
+    background-color: #d3d3d3;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,19 +9,19 @@ body {
 }
 
 .form-container {
-    background: white;
+    background: rgb(253, 246, 246);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    border-top: 5px solid #DD0031; /* Vermelho do São Paulo FC */
+    border-top: 5px solid #fb0339; /* Vermelho do São Paulo FC */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000000; /* Preto do São Paulo FC */
+    color: #000000bc; /* Preto do São Paulo FC */
 }
 
 form {
@@ -31,30 +31,30 @@ form {
 
 label {
     margin: 10px 0 5px;
-    color: #000000; /* Preto do São Paulo FC */
+    color: #00000082; /* Preto do São Paulo FC */
 }
 
 input, select, textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #bebbbb;
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 16px;
-    background-color: #f4f4f4; /* Fundo cinza claro */
+    background-color: #dad1d1; /* Fundo cinza claro */
 }
 
 button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #DD0031; /* Vermelho do São Paulo FC */
+    background-color: #c7052f; /* Vermelho do São Paulo FC */
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #B5002D; /* Tom mais escuro de vermelho */
+    background-color: #a4022a; /* Tom mais escuro de vermelho */
 }
 
 footer {
