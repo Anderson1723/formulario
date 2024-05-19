@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Filmes, Séries e Documentários</title>
+    <title>Site de Jogos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Catálogo</h1>
-        <div class="filter">
-            <label for="filter">Filtrar por:</label>
-            <select id="filter">
-                <option value="all">Todos</option>
-                <option value="filme">Filmes</option>
-                <option value="serie">Séries</option>
-                <option value="documentario">Documentários</option>
-            </select>
+    <header>
+        <h1>Site de Jogos</h1>
+    </header>
+    <main>
+        <div class="game-list">
+            <div class="game-item">
+                <h2>Jogo 1</h2>
+                <a href="jogo1.html">Jogar</a>
+            </div>
+            <div class="game-item">
+                <h2>Jogo 2</h2>
+                <a href="jogo2.html">Jogar</a>
+            </div>
+            <div class="game-item">
+                <h2>Jogo 3</h2>
+                <a href="jogo3.html">Jogar</a>
+            </div>
+            <!-- Adicione mais jogos conforme necessário -->
         </div>
-        <div id="catalog">
-            <div class="item filme">
-                <img src="filme1.jpg" alt="Filme 1">
-                <h2>Filme 1</h2>
-                <p>Descrição do Filme 1.</p>
-            </div>
-            <div class="item serie">
-                <img src="serie1.jpg" alt="Série 1">
-                <h2>Série 1</h2>
-                <p>Descrição da Série 1.</p>
-            </div>
-            <div class="item documentario">
-                <img src="documentario1.jpg" alt="Documentário 1">
-                <h2>Documentário 1</h2>
-                <p>Descrição do Documentário 1.</p>
-            </div>
-            <!-- Adicione mais itens conforme necessário -->
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de Jogos</p>
+    </footer>
 </body>
 </html>

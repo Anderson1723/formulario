@@ -5,55 +5,59 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.filter {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#filter {
-    padding: 10px;
-    font-size: 16px;
-}
-
-#catalog {
+.game-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.item {
+.game-item {
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.item img {
-    max-width: 100%;
-    height: auto;
+.game-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.item h2 {
-    font-size: 20px;
-    margin: 10px 0;
+.game-item a:hover {
+    background-color: #4cae4c;
 }
 
-.item p {
-    color: #555;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
