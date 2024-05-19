@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, fantasy;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -16,29 +16,35 @@ main {
     padding: 20px;
 }
 
-.game-list {
+.video-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.game-item {
+.video-item {
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
-    width: 30%;
+    width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.game-item h2 {
+.video-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-item h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.game-item a {
+.video-item a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -48,7 +54,7 @@ main {
     border-radius: 5px;
 }
 
-.game-item a:hover {
+.video-item a:hover {
     background-color: #4cae4c;
 }
 
