@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Vídeos</title>
+    <title>Formulário - Conheça o Morumbi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Site de Vídeos</h1>
-    </header>
-    <main>
-        <div class="video-list">
-            <div class="video-item">
-                <h2>Vídeo 1</h2>
-                <a href="video1.html">
-                    <img src="thumbnail1.jpg" alt="Vídeo 1">
-                </a>
-            </div>
-            <div class="video-item">
-                <h2>Vídeo 2</h2>
-                <a href="video2.html">
-                    <img src="thumbnail2.jpg" alt="Vídeo 2">
-                </a>
-            </div>
-            <div class="video-item">
-                <h2>Vídeo 3</h2>
-                <a href="video3.html">
-                    <img src="thumbnail3.jpg" alt="Vídeo 3">
-                </a>
-            </div>
-            <!-- Adicione mais vídeos conforme necessário -->
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Site de Vídeos</p>
-    </footer>
+    <div class="form-container">
+        <h1>Conheça o Morumbi</h1>
+        <form id="morumbiForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="date">Data de Visita:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário de Visita:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="interest">Interesse:</label>
+            <select id="interest" name="interest" required>
+                <option value="tour">Tour Guiado</option>
+                <option value="game">Assistir a um Jogo</option>
+                <option value="event">Eventos</option>
+                <option value="other">Outros</option>
+            </select>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
