@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Exemplo</title>
+    <title>Catálogo de Filmes, Séries e Documentários</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <form id="exampleForm">
-            <h1>Formulário de Contato</h1>
-            
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="container">
+        <h1>Catálogo</h1>
+        <div class="filter">
+            <label for="filter">Filtrar por:</label>
+            <select id="filter">
+                <option value="all">Todos</option>
+                <option value="filme">Filmes</option>
+                <option value="serie">Séries</option>
+                <option value="documentario">Documentários</option>
+            </select>
+        </div>
+        <div id="catalog">
+            <div class="item filme">
+                <img src="filme1.jpg" alt="Filme 1">
+                <h2>Filme 1</h2>
+                <p>Descrição do Filme 1.</p>
+            </div>
+            <div class="item serie">
+                <img src="serie1.jpg" alt="Série 1">
+                <h2>Série 1</h2>
+                <p>Descrição da Série 1.</p>
+            </div>
+            <div class="item documentario">
+                <img src="documentario1.jpg" alt="Documentário 1">
+                <h2>Documentário 1</h2>
+                <p>Descrição do Documentário 1.</p>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

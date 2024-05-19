@@ -1,25 +1,16 @@
-document.getElementById('exampleForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o envio do formulário para demonstração
+document.getElementById('filter').addEventListener('change', function() {
+    const filterValue = this.value;
+    const items = document.querySelectorAll('.item');
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (name === '' || email === '' || message === '') {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
-
-    if (!validateEmail(email)) {
-        alert('Por favor, insira um email válido.');
-        return;
-    }
-
-    // Se tudo estiver ok, envie o formulário ou faça o que for necessário
-    alert('Formulário enviado com sucesso!');
+    items.forEach(item => {
+        if (filterValue === 'all') {
+            item.style.display = 'block';
+        } else {
+            if (item.classList.contains(filterValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    });
 });
-
-function validateEmail(email) {
-    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return re.test(String(email).toLowerCase());
-}
