@@ -15,11 +15,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
+    border-top: 5px solid #DD0031; /* Vermelho do São Paulo FC */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #000000; /* Preto do São Paulo FC */
 }
 
 form {
@@ -29,6 +31,7 @@ form {
 
 label {
     margin: 10px 0 5px;
+    color: #000000; /* Preto do São Paulo FC */
 }
 
 input, select, textarea {
@@ -37,18 +40,29 @@ input, select, textarea {
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 16px;
+    background-color: #f4f4f4; /* Fundo cinza claro */
 }
 
 button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #5cb85c;
+    background-color: #DD0031; /* Vermelho do São Paulo FC */
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #B5002D; /* Tom mais escuro de vermelho */
+}
+
+footer {
+    background-color: #000000; /* Preto do São Paulo FC */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
